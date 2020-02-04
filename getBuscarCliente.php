@@ -44,7 +44,9 @@ if(isset($_GET['NOME'])){
         );
         exit;
     }
-    print_r($dados);
+            while ($row = mysqli_fetch_assoc($dados)) {
+            print_r($row);
+        }
     exit;
 }
 
@@ -69,7 +71,11 @@ if(isset($_GET['IDADE_DE']) && isset($_GET['IDADE_ATE'])){
         );
         exit;
     }
-    print_r($dados);
+    
+        while ($row = mysqli_fetch_assoc($dados)) {
+            print_r($row);
+        }
+
     exit;
 }
 
@@ -89,7 +95,7 @@ function buscarClienteNome($nomeBuscar){
     $connect = $var->dbConnect();
     $utf = $var->freeRun("SET NAMES 'utf8'");
     $buscarCliente = $var->freeRun("SELECT * FROM CLIENTE WHERE nome like '%".$nomeBuscar."%'");
-    $buscarCliente = mysqli_fetch_assoc($buscarCliente);
+    //$buscarCliente = mysqli_fetch_assoc($buscarCliente);
     return $buscarCliente;
 }
 
@@ -98,8 +104,8 @@ function buscarClienteIdade($IdadeDEBuscar, $IdadeATEBuscar){
     $var = new Mysql();
     $connect = $var->dbConnect();
     $utf = $var->freeRun("SET NAMES 'utf8'");
-    $buscarCliente = $var->freeRun("SELECT * FROM CLIENTE WHERE idade >='$IdadeDEBuscar' and idade <= '$IdadeATEBuscar'");
-    $buscarCliente = mysqli_fetch_assoc($buscarCliente);
+    $buscarCliente = $var->freeRun("SELECT * FROM CLIENTE WHERE idade >=$IdadeDEBuscar and idade <= $IdadeATEBuscar");
+    //$buscarCliente = mysqli_fetch_assoc($buscarCliente);
     return $buscarCliente;
 }
 

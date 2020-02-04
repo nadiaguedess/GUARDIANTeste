@@ -52,13 +52,15 @@ try{
                             (`cpf`,
                             `nome`,
                             `data_nascimento`,
-                            `email`
+                            `email`,
+                            idade
                             ) 
                         values (
                             '".$obj->cliente->cpf."', 
                             '".$obj->cliente->nome."', 
                             '".$obj->cliente->data_nascimento."', 
-                            '".$obj->cliente->email."'
+                            '".$obj->cliente->email."',
+                            ".$obj->cliente->idade."
                             )");
     }else{
         echo json_encode(
