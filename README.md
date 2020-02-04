@@ -73,24 +73,34 @@ Possíveis Retornos:
 
 Caso o formato do Celular esteja inválido:
 "message": "Celular inválido!" 
+
 Caso o cliente já esteja cadastrado no bando de dados:
 "message": "Cliente já existe!"
+
 Confirmando que o cliente foi cadastrado com sucesso:
 "message": "Cliente NOME inserido(a) com sucesso!! "
+
 Caso ocorra uma exceção ao tentar inserir o cliente no banco de dados:
 "message": "Não foi possível inserir o cliente. Ex:" EXCEPTION
+
 Crítica/Validação do CPF do cliente a ser cadastrado:
 "message": "CPF do Cliente não informado ou a quantidade de caracteres maior que 14! "
+
 Crítica/Validação do Nome do cliente a ser cadastrado:
 "message": "Nome do Cliente não informado ou a quantidade de caracteres maior que 60!"
+
 Crítica/Validação da Data de Nascimento do cliente a ser cadastrado:
 "message": "Data de Nascimento do Cliente não informado ou Data inválida!"
+
 Crítica/Validação do E-mail do cliente a ser cadastrado:
 "message": "E-mail do Cliente não informado ou a quantidade de caracteres maior que 60!"
+
 Crítica/Validação do(s) Telefone(s) do cliente a ser cadastrado:
 "message": "Telefone(s) do Cliente não informado ou a quantidade de caracteres maior que 15!"
+
 Crítica a falta de parâmetros ao buscar um usuário:
 "message": "Parâmetros não fornecidos!"
+
 Mensagem para cliente não encontrado no bando de dados:
 "message": "Cliente não encontrado!"
 
