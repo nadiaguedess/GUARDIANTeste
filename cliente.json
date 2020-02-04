@@ -1,0 +1,15 @@
+{
+    "cliente": {
+		"cpf": "02354859694",
+        "nome": "Nádia Guedes de Araujo",
+        "data_nascimento": "1999-05-31",
+        "email": "nadiaguedees@gmail.com",
+		"telefone": [
+						"(31) 99348-0001",
+						"(31) 99348-0002",
+						"(31) 99348-0003",
+						"(31) 99348-0004"
+					]
+       
+    }
+}
